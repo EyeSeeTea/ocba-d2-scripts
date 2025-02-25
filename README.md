@@ -6,11 +6,7 @@ The HIV Data Generator is a Node/TS script that generates synthetic HIV patient 
 
 ## System Requirements
 
-### Required Software
-
-1. **Node v16**
-2. **yarn** (Node package manager)
-3. **Git** (to clone Bulk Load repository)
+### Setup
 
 ```sh
 $ git clone https://github.com/eyeseetea/ocba-d2-script
