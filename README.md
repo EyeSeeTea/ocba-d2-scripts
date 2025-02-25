@@ -13,8 +13,8 @@ The HIV Data Generator is a Node/TS script that generates synthetic HIV patient 
 3. **Git** (to clone Bulk Load repository)
 
 ```sh
-$ git clone https://github.com/eyeseetea/bulk-load
-$ git checkout feature/ocba-hiv-generate-dev-8697qpqp6
+$ git clone https://github.com/eyeseetea/ocba-d2-script
+$ cd ocba-d2-script
 $ nvm use
 $ yarn install
 ```
@@ -58,6 +58,17 @@ The script generates an Excel file ready to be imported in Bulk Load. It contain
 -   Closure percentage determines how many patients have closure records
 
 ## Import
+
+Now in bulk-load:
+
+```
+```sh
+$ git clone https://github.com/eyeseetea/bulk-load
+$ cd bulk-load
+$ git checkout v3.26.0
+$ nvm use
+$ yarn install
+```
 
 Import all generate xlsx files (a JSON report file will be generated for each imported file)
 
