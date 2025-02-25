@@ -1,8 +1,8 @@
 {
-    "name": "dhis2-script-skeleton",
+    "name": "ocba-d2-scripts",
     "version": "0.1.0",
     "main": "src/index.ts",
-    "description": "DHIS2 script skeleton",
+    "description": "OCBA DHIS2 Scripts",
     "scripts": {
         "build:dev": "webpack --mode development --watch",
         "build": "webpack --mode production",
