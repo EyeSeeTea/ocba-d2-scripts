@@ -9,8 +9,8 @@ The HIV Data Generator is a Node/TS script that generates synthetic HIV patient 
 ### Setup
 
 ```sh
-$ git clone https://github.com/eyeseetea/ocba-d2-script
-$ cd ocba-d2-script
+$ git clone https://github.com/eyeseetea/ocba-d2-scripts
+$ cd ocba-d2-scripts
 $ nvm use
 $ yarn install
 ```
