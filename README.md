@@ -57,7 +57,6 @@ The script generates an Excel file ready to be imported in Bulk Load. It contain
 
 Now in bulk-load:
 
-```
 ```sh
 $ git clone https://github.com/eyeseetea/bulk-load
 $ cd bulk-load
