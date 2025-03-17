@@ -53,7 +53,7 @@ $ yarn install
 Using bundled xlsx (hiv-bl-template.xlsx):
 
 ```sh
-$ npx ts-node src/scripts/ocba-generate-hiv-data.ts --template src/scripts/hiv-bl-template.xlsx --output "hiv-data-INDEX.xlsx"
+$ yarn start hiv-data generate --template src/scripts/commands/hiv-bl-template.xlsx --output "hiv-data-INDEX.xlsx"
 ```
 
 Notes:
