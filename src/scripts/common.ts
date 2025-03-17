@@ -80,3 +80,26 @@ export function choiceOf<T extends string>(values: readonly T[]): Type<string, T
         },
     };
 }
+
+export const StringPairsByDashSeparatedByCommas: Type<string, Pair[]> = {
+    async from(str) {
+        const values = _(str.split(",")).compact().value();
+        if (_(values).isEmpty()) throw new Error("Pairs cannot be empty");
+        return values.map(value => {
+            const id1 = value.slice(0, value.indexOf("-")); //cannot use .split because of dates using "-"
+            const id2 = value.slice(value.indexOf("-") + 1);
+            if (!id1 || !id2) throw new Error(`Invalid pair: ${str} (expected ID1-ID2)`);
+            return [id1, id2];
+        });
+    },
+};
+
+export type Pair = [string, string];
+
+export const StringPairSeparatedByDash: Type<string, Pair> = {
+    async from(str) {
+        const [id1, id2] = str.split("-");
+        if (!id1 || !id2) throw new Error(`Invalid pair: ${str} (expected ID1-ID2)`);
+        return [id1, id2];
+    },
+};
