@@ -2,6 +2,7 @@ import path from "path";
 import { run, subcommands } from "cmd-ts";
 
 import * as users from "./commands/users";
+import * as closePatients from "./commands/patients";
 import * as hivGenerator from "./commands/hiv-data";
 
 export function runCli() {
@@ -10,6 +11,7 @@ export function runCli() {
         cmds: {
             "hiv-data": hivGenerator.getCommand(),
             users: users.getCommand(),
+            patients: closePatients.getCommand(),
         },
     });
 
